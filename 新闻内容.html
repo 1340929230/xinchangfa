@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻资讯</title>
+	<style type="text/css">
+		body,p,ul,ol,li,h1,h2,h3,h4,h5,h6{ 
+		margin:0; padding:0;
+		font-weight: normal;
+		}
+		ul{ 
+		list-style: none;
+		}
+		a{ 
+		text-decoration:none;
+		color: #000;
+		}
+		em{ 
+		font-style:normal;
+		}
+		img{ 
+		border:none; vertical-align:middle;
+		}
+		.clearfix:after{ 
+		content: "";
+		display: block;
+		clear: both;
+		}
+		#header{
+			border-top: 3px solid #1B5AA9;
+			height: 113px;
+			width: 100%;
+			background-color: #F0F0F0;
+		}
+		.content{
+			margin: 0 auto;
+			width: 1082px;
+			position: relative;
+		}
+		#header .logo{
+			margin-top: 50px;
+			margin-left: 30px;
+			line-height: 113px;
+		}
+		#header li{
+			text-align: center;
+			height: 23px;
+			width: 70px;
+			float: left;
+		}
+		#header li:after{
+			color: #fff;
+			float: right;
+			content: '|';
+		}
+		#header .a:after{
+			content: '';
+		}
+		#header ul{
+			margin-top: -3px;
+			float: right;
+			background-color: #0396C7;
+			border-radius: 3px;
+			border-top: 3px solid #1B5AA9;
+		}
+		#header ul a{
+			color: #fff;
+			font-size: 11px;
+		}
+		.sousuo{
+			border: 1px solid #ddd;
+			border-bottom: none;
+			font-size: 10px;
+			width:220px;
+			height: 24px;
+			line-height: 24px;
+			position: absolute;
+			right: 95px;
+			top: 60px;
+			background: url('images/soubg.png') repeat-x;
+			color: #6F7D88;
+		}
+		.sousuo span a{
+			color: #000;
+			font-size: 12px;
+			text-align: center;
+			width: 47px;
+			float: right;
+			background: url('images/sousuobg.png') repeat-x;
+		}
+		.sousuo img{
+			margin-left: 5px;
+		}
+		#dht{
+			background-color: #0396C7;
+			height: 42px;
+		}
+		#dht ul{
+			width: 1082px;
+			margin: 0 auto;
+		}
+		#dht li{
+			background-color: #0396C7;
+			float: left;
+			line-height: 41px;
+			text-align: center;
+		}
+		#dht li a{
+			width: 133px;
+			display: block;
+			font-weight: bold;
+			font-size: 12px;
+			color: #fff;
+		}
+		#dht li:hover{
+			line-height: 41px;
+			background: #2626FF;
+			border: 1px solid #fff;
+			box-sizing: border-box;
+			margin-left: -1px;
+		}
+		#dht .act{
+			background: #2626FF;
+			border: 1px solid #fff;
+			box-sizing: border-box;
+		}
+		#banner{
+			height: 532px;
+			background: url('images/banner.png') no-repeat;
+		}
+		#body{
+			margin-top: 25px;
+		}
+		#left{
+			float: left;
+			width: 267px;
+		}
+		#left .top{
+			width: 267px;
+			border:1px solid #ddd ;
+		}
+		#left h2{
+			font-weight: bold;
+			padding-left: 15px;
+			color: #fff;
+			height: 25px;
+			line-height: 25px;
+			font-size: 12px;
+			background: url('images/ulbg.png') no-repeat;
+		}
+		#left .top span a{
+			display: block;
+			line-height: 25px;
+			padding-right: 15px;
+			font-size: 6px;
+			color: #737475;
+			float: right;
+		}
+		#left .top li{
+			height: 45px;
+			background: url('images/lilibg.png') no-repeat left center;
+			border-bottom: 1px solid #ddd;
+		}
+		#left .top a{
+			font-weight: bold;
+			font-size: 12px;
+			margin-left: 40px;
+			line-height: 45px;
+			display: block;
+			height: 45px;
+		}
+		#left .top li:hover{
+			background: #0397C7;
+		}
+		#left .top li:hover a{
+			color: #fff;
+		}
+		#left .top .z{
+			border-bottom: none;
+		}
+		#left .bottom{
+			margin-top: 15px;
+			width: 267px;
+			border: 1px solid #ddd;
+		}
+		#left .bottom li{
+			text-indent: 2em;
+			font-size: 12px;
+			line-height: 2.5;
+		}
+		#left .bottom .p{
+			margin-top: 10px;
+			font-weight: bold;
+		}
+		#right{
+			float: right;
+			width: 772px;
+		}
+		#right .new{
+			margin-top: 5px;
+			background: url('images/font.png') no-repeat center;
+			border-bottom: 1px solid #ccc;
+		}
+		#right h3{
+			font-size: 18px;
+			font-weight: bold;
+		}
+		#right h3 span{
+			color: #FE5400;
+		}
+		#right .font p{
+			margin: 0 30px;
+			text-indent: 2em;
+			line-height: 1.5;
+			font-size: 14px;
+		}
+		#right .new p{
+			display: inline-block;
+			font-size: 12px;
+			color: #666;
+		}
+		#right .n{
+			height: 110px;
+			border-bottom: 1px solid #ddd;
+		}
+		#right h4{
+			font-weight: bold;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+		#right .l{
+			color: #000;
+			margin-right: 18px;
+			float: right;
+		}
+		
+		#youqing{
+			margin-top: 15px;
+			height: 45px;
+			line-height: 45px;
+			margin-bottom: 20px;
+		}
+		#youqing p{
+			padding-left: 10px;
+			border: 1px solid #ccc;
+			font-size: 12px;
+		}
+		#youqing p span{
+			font-weight: bold;
+		}
+		#footer{
+			height: 90px;
+			line-height: 90px;
+		}
+		#footer p{
+			font-size: 12px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="content clearfix">
+			<img class="logo" src="images/logo.png">
+			<ul>
+				<li><a href="鑫昌发-首页.html">设为首页</a></li>
+				<li><a href="#">加入收藏</a></li>
+				<li class="a"><a href="联系我们.html">联系我们</a></li>
+			</ul>
+			<div class="sousuo clearfix">
+				<img src="images/sousuo.png"> Keywords<span><a href="#">搜 索</a></span>
+			</div>
+		</div>
+	</div>
+	<div id="dht" class="clearfix">
+		<div class="content clearfix">
+			<ul class="clearfix">
+				<li><a href="鑫昌发-首页.html">网站首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li class="act"><a href="新闻资讯.html">新闻资讯</a></li>
+				<li><a href="产品展示.html">产品展示</a></li>
+				<li><a href="销售网络.html">销售网络</a></li>
+				<li><a href="荣誉资质.html">资质荣誉</a></li>
+				<li><a href="请您留言.html">请您留言</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner"></div>
+	<div id="body">
+		<div class="content clearfix">
+			<div id="left">
+				<div class="chanpin">
+					<div class="top">
+						<h2 class="clearfix">产品展示<span><a href="产品展示.html">MORE&gt;</a></span></h2>
+						<ul>
+							<li><a href="产品展示.html">尼龙拉链</a></li>
+							<li><a href="产品展示.html">金属拉链</a></li>
+							<li><a href="产品展示.html">树脂拉链</a></li>
+							<li><a href="产品展示.html">无码拉链</a></li>
+							<li><a href="产品展示.html">打码拉链</a></li>
+							<li><a href="产品展示.html">工字文拉链</a></li>
+							<li><a href="产品展示.html">人字纹拉链</a></li>
+							<li><a href="产品展示.html">塑料拉头</a></li>
+							<li><a href="产品展示.html">金属拉头</a></li>
+							<li class="z"><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="right">
+				<div class="new clearfix">
+					<h3><span>新闻</span>资讯</h3>
+					<p>INFORMATION</p>
+					<p class="l">当前位置：<a href="鑫昌发-首页.html">首页</a>—<a href="新闻资讯.html">新闻资讯</a>—<a href="新闻内容.html">拉链的规格和型号</a></p>
+				</div>
+				<div class="font">
+					<h4>拉链的规格和型号</h4>
+					<p>给服装选配拉链时，不仅要关注拉链布带的色彩与面料的差异度，也就是通常所说的色差，更要关注拉链布带的色牢度。对于生产商来说，拉链色牢度是否达到标准级数以及拉链和服饰之间是否会发生颜色互移会直接影响到最终产品质量。</p>
+　　<p>色牢度主要包括产品耐洗、耐摩擦的性能，一般指染色织物在使用或加工过程中，经受外部因素(挤压、摩擦、皂洗、雨淋、曝晒等等)作用下的褪色程度。作为生产商，在选择拉链供应商时，应关注拉链的三种色牢度：耐日晒牢度、耐皂洗牢度和颜色移染，从而可以避开这些问题的发生，提高服装的质量。</p>
+　　<p>耐日晒牢度一般来说，汗渍都是伴随着日晒发生的。因此，这里所说的耐日晒牢度不是单一的，它包括对日晒和汗渍的双重牢度。不同程度的日晒会导致一系列的光化学反应促使染料本身的结构破坏，从而导致变色和褪色。同时汗液的存在会使得pH值呈现弱酸性或弱碱性，这样也会明显降低一些分散染料的耐日晒牢度。因此这种复合效应与单纯的耐日晒牢度或耐汗渍牢度是有很大区别的。不过通过一些预防措施，可以增强这种复合的耐日晒牢度，从而使拉链的色彩长时间保持鲜艳。所以，选择一些拉链产品时，应该选用那些经过抗紫外线增强处理或直接选用具有高日晒牢度的拉链。</p>
+　　<p>耐皂洗牢度拉链布带的耐皂洗牢度同样也是一项重要的指标。一般的拉链布带是用100%的涤纶织制，采用分散染料高温染色。分散染料的皂洗牢度是指在一定洗涤条件下，染色物的掉色对单纤维或多纤维布造成沾色的程度。从理论上来讲，由于分散染料是分散在涤纶内部，而且染料的分散浓度由纤维表层向里层逐渐递减，这使得表层聚集了较多的染料分子。因此，耐皂洗牢度的好坏取决于两方面：一是染料本身与纤维分子间相互作用力的大小，作用力大则染料分子难于被皂洗出纤维表层，作用力小则反之；二是在染色后整理工序中，纤维表层染料分子的残留量，如果后道处理比较彻底，表层染料残留量将会微乎其微，皂洗就很难使拉链布带掉色。</p>
+　　<p>但由于皂洗标准很多，如皂洗温度有40℃、60℃及更高的95℃；洗涤剂的种类很多，一般分为无磷和有磷；洗涤的时间也是有长有短。因此，在不同的洗涤标准下，得出的拉链布带牢度是没有可比性的。而且皂洗强度高，会造成布带牢度下降。因此，除了要告诉消费者在平常的衣服洗涤过程中，针对拉链布带不宜采用高温水和过量过强的洗涤剂，一般温度不要超过40℃，最好中性及弱碱性的洗涤剂，时间不超过30分钟等等之外，最重要的是在选择拉链产品时，尽可能选择一些耐皂洗牢度较高的产品。</p>
+　　<p>颜色移染问题很多服饰生产企业使用的往往是具有特殊性质的材料，如PVC、PE布及各种功能涂层的面料，这些面料加工工艺较复杂，通常都会残留一些增塑剂、溶剂等化工助剂。正是由于这些助剂的存在，当与纤维布带长时间接触，这些助剂就会渗透到纤维内部而使染料分子更容易从纤维内部向表层扩散。如果面料是白色或浅色，面料就很容易被沾污。</p>
+　　<p>要解决这种由于扩散而引起的拉链布带移色问题，最好的方法就是在选用拉链的时候，看其使用的染料是否能与涤纶纤维更好地结合。</p>
+　　<p>拉链是服饰重要的辅料，其各方面指标的好坏直接影响到服饰成品最后的质量。所以，在选择拉链供应商时，也一定要了解清楚其产品各方面的指标如何。</p>
+</div>
+			</div>
+		</div>
+	</div>
+	<div id="youqing">
+		<div class="content">
+			<p><span>友情链接：</span><a href="鑫昌发-首页.html">容城县鑫昌发拉链有限公司</a></p>
+		</div>
+	</div>
+	<div id="dht" class="clearfix">
+		<div class="content clearfix">
+			<ul class="clearfix">
+				<li><a href="鑫昌发-首页.html">网站首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="新闻资讯.html">新闻资讯</a></li>
+				<li><a href="产品展示.html">产品展示</a></li>
+				<li><a href="销售网络.html">销售网络</a></li>
+				<li><a href="荣誉资质.html">资质荣誉</a></li>
+				<li><a href="请您留言.html">请您留言</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="content">
+			<p>版权所有：崔晓东 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 技术支持：崔晓东 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ICP备案编号：未进行备案</p>
+		</div>
+	</div>
+</body>
+</html>

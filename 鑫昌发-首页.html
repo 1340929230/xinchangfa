@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新昌发-首页</title>
+	<style type="text/css">
+				body,p,ul,ol,li,h1,h2,h3,h4,h5,h6{ 
+		margin:0; padding:0;
+		font-weight: normal;
+		}
+		ul{ 
+		list-style: none;
+		}
+		a{ 
+		text-decoration:none;
+		color: #000;
+		}
+		em{ 
+		font-style:normal;
+		}
+		img{ 
+		border:none; vertical-align:middle;
+		}
+		.clearfix:after{ 
+		content: "";
+		display: block;
+		clear: both;
+		}
+		#header{
+			border-top: 3px solid #1B5AA9;
+			height: 113px;
+			width: 100%;
+			background-color: #F0F0F0;
+		}
+		.content{
+			margin: 0 auto;
+			width: 1082px;
+			position: relative;
+		}
+		#header .logo{
+			margin-top: 50px;
+			margin-left: 30px;
+			line-height: 113px;
+		}
+		#header li{
+			text-align: center;
+			height: 23px;
+			width: 70px;
+			float: left;
+		}
+		#header li:after{
+			color: #fff;
+			float: right;
+			content: '|';
+		}
+		#header .a:after{
+			content: '';
+		}
+		#header ul{
+			margin-top: -3px;
+			float: right;
+			background-color: #0396C7;
+			border-radius: 3px;
+			border-top: 3px solid #1B5AA9;
+		}
+		#header ul a{
+			color: #fff;
+			font-size: 11px;
+		}
+		.sousuo{
+			border: 1px solid #ddd;
+			border-bottom: none;
+			font-size: 10px;
+			width:220px;
+			height: 24px;
+			line-height: 24px;
+			position: absolute;
+			right: 95px;
+			top: 60px;
+			background: url('images/soubg.png') repeat-x;
+			color: #6F7D88;
+		}
+		.sousuo span a{
+			color: #000;
+			font-size: 12px;
+			text-align: center;
+			width: 47px;
+			float: right;
+			background: url('images/sousuobg.png') repeat-x;
+		}
+		.sousuo img{
+			margin-left: 5px;
+		}
+		#dht{
+			background-color: #0396C7;
+			height: 42px;
+			margin: 0 auto;
+		}
+		#dht ul{
+			width: 1082px;
+			margin: 0 auto;
+		}
+		#dht li{
+			background-color: #0396C7;
+			float: left;
+			line-height: 41px;
+			text-align: center;
+		}
+		#dht li a{
+			width: 133px;
+			display: block;
+			font-weight: bold;
+			font-size: 12px;
+			color: #fff;
+		}
+		#dht li:hover{
+			line-height: 41px;
+			background: #2626FF;
+			border: 1px solid #fff;
+			box-sizing: border-box;
+			margin-left: -1px;
+		}
+		#dht .act{
+			background: #2626FF;
+			border: 1px solid #fff;
+			box-sizing: border-box;
+		}
+		#banner{
+			height: 532px;
+			background: url('images/banner.png') no-repeat;
+		}
+		.one .rexiao{
+			float: left;
+			width: 267px;
+			height: 274px;
+			border: 1px solid #e5e5e5;
+		}
+		#body h2{
+			padding-left:8px ;
+			color: #fff;
+			font-weight: bold;
+			font-size: 12px;
+			height: 29px;
+			line-height: 29px;
+			background: url('images/ulbg.png') no-repeat;
+		}
+		.one{
+			margin-top: 10px;
+		}
+		.one img{
+			border: 2px solid #e5e5e5;
+			margin: 10px;
+		}
+		.one .xinwen{
+			margin-left: 14px;
+			float: left;
+			width: 526px;
+			height: 274px;
+			border: 1px solid #e5e5e5;
+			background: url('images/biaotibg.png') repeat-x;
+		}
+		.one .xinwen ul{
+			margin-top: 10px;
+		}
+		.one .xinwen li{
+			font-size: 10px;
+			margin-left: 10px;
+			padding-left: 10px;
+			background: url('images/lllbg.png') no-repeat left center;
+			height: 26px;
+			line-height: 26px;
+		}
+		.one .xinwen span{
+			margin-right: 10px;
+			float: right;
+		}
+		.one .guanyu{
+			margin-left: 13px;
+			float: left;
+			width: 254px;
+			height: 274px;
+			border: 1px solid #e5e5e5;
+		}
+		.one .neirong{
+			width: 219px;
+			margin: 0 auto;
+		}
+		.one .guanyu p{
+			margin-top: 5px;
+			font-size: 12px;
+			line-height: 22px;
+			text-indent: 2em;
+		}
+		.two{
+			margin-top: 10px;
+		}
+		.two .lianxi{
+			float: left;
+			width: 267px;
+			height:200px;
+			border: 1px solid #e5e5e5;
+			font-size: 12px;
+		}
+		.two .aaa{
+			margin-top: 12px;
+			font-weight: bold;
+		}
+		.two li{
+			text-indent: 2em;
+			line-height: 30px;
+		}
+		.two .chenggong{
+			margin-left: 14px;
+			float: left;
+			width: 796px;
+			height: 200px;
+			background: url('images/biaotibg.png') repeat-x;
+			border: 1px solid #e5e5e5;
+		}
+		.two .chenggong span{
+			margin-right: 10px;
+			font-size: 5px;
+			color: #737373;
+			float: right;
+		}
+		.chenggong .le{
+			margin: 70px 7px 0;
+			float: left;
+		}
+		.chenggong .ri{
+			margin: 70px 7px 0;
+			float: right;
+		}
+		.chenggong .php{
+			margin-left: 5px;
+			float: left;
+			width: 700px;
+		}
+		.chenggong .php img{
+			padding: 3px;
+			border: 1px solid #e5e5e5;
+		}
+		.chenggong .php p{
+			margin: 9px 8px ;
+			float: left;
+			width: 158px;
+			text-align: center;
+		}
+		.chenggong .php a{
+			display: block;
+			padding-top: 10px;
+			font-size: 12px;
+			text-decoration: underline;
+		}
+		.three{
+			margin-top: 10px;
+		}
+		.three .chanpin{
+			float: left;
+			width: 1081px;
+			height: 458px;
+			background: url('images/biaotibg.png') repeat-x;
+			border: 1px solid #e5e5e5;
+			border-left: 0;
+		}
+		.three .chanpin h2{
+			border-left: 1px solid #e5e5e5;
+		}
+		.three .chanpin span{
+			margin-right: 10px;
+			font-size: 5px;
+			color: #737373;
+			float: right;
+		}
+		.three .chanpin ul{
+			margin-right: 20px;
+			float: left;
+		}
+		.three .chanpin li{
+			width: 160px;
+			height: 43px;
+			padding-left: 40px;
+			background: url('images/libg.png') no-repeat left center;
+		}
+		.three .chanpin a{
+			font-size: 12px;
+			font-weight: bold;
+			display: block;
+			height: 42px;
+			width: 160px;
+			line-height: 42px;
+		}
+		.three .chanpin li:hover a{
+			color: #fff;
+		}
+		.three .chanpin li:hover{
+			background: url('images/ulbgg.png');
+		}
+		.three .chanpin .pnp{
+			width: 855px;
+			float: left;
+		}
+		.three .chanpin .pnp img{
+			margin:5px ;
+			float: left;
+		}
+		#youqing{
+			margin-top: 10px;
+			height: 45px;
+			line-height: 45px;
+			margin-bottom: 20px;
+		}
+		#youqing p{
+			padding-left: 10px;
+			border: 1px solid #ccc;
+			font-size: 12px;
+		}
+		#youqing p span{
+			font-weight: bold;
+		}
+		#footer{
+			height: 90px;
+			line-height: 90px;
+		}
+		#footer p{
+			font-size: 12px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="content clearfix">
+			<img class="logo" src="images/logo.png">
+			<ul>
+				<li><a href="鑫昌发-首页.html">设为首页</a></li>
+				<li><a href="#">加入收藏</a></li>
+				<li class="a"><a href="联系我们.html">联系我们</a></li>
+			</ul>
+			<div class="sousuo clearfix">
+				<img src="images/sousuo.png"> Keywords<span><a href="#">搜 索</a></span>
+			</div>
+		</div>
+	</div>
+	<div id="dht" class="clearfix">
+		<div class="content clearfix">
+			<ul class="clearfix">
+				<li class="act"><a href="鑫昌发-首页.html">网站首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="新闻资讯.html">新闻资讯</a></li>
+				<li><a href="产品展示.html">产品展示</a></li>
+				<li><a href="销售网络.html">销售网络</a></li>
+				<li><a href="荣誉资质.html">资质荣誉</a></li>
+				<li><a href="请您留言.html">请您留言</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner"></div>
+	<div id="body">
+		<div class="content clearfix">
+			<div class="one clearfix">
+				<div class="rexiao">
+					<h2>热销地点</h2>
+					<img src="images/internet.png" width="245px" height="220px">
+				</div>
+				<div class="xinwen">
+					<h2>新闻资讯</h2>
+					<ul>
+						<li><a href="新闻内容.html">拉链的规格和型号</a><span>2016-1-15</span></li>
+						<li><a href="新闻内容.html">拉链的功能</a><span>2016-1-15</span></li>
+						<li><a href="新闻内容.html">拉链的材料</a><span>2016-1-15</span></li>
+						<li><a href="新闻内容.html">拉链的保养技巧</a><span>2016-1-15</span></li>
+						<li><a href="新闻内容.html">拉链简单介绍</a><span>2016-1-15</span></li>
+						<li><a href="新闻内容.html">拉链的历史</a><span>2016-1-15</span></li>
+						<li><a href="新闻内容.html">拉链的强力</a><span>2016-1-15</span></li>
+						<li><a href="#"></a><span>2016-1-15</span></li>
+						<li><a href="#"></a><span>2016-1-15</span></li>
+					</ul>
+				</div>
+				<div class="guanyu">
+					<h2>关于我们</h2>
+					<div class="neirong">
+						<img src="images/guanyubg.png">
+						<p>容城县鑫昌发拉链有限公司我公司具体地址位于河北省保定市容城县高小王村,欢迎各位新老客户来我公司参观指导工作，，联系电话为0312-5439528，您如果对...<a href="关于我们.html">【详细介绍】</a></p>
+				</div>
+				</div>
+			</div>
+			<div class="two clearfix">
+				<div class="lianxi">
+					<h2>联系我们</h2>
+					<ul>
+						<li class="aaa">容城县鑫昌发拉链有限公司</li>
+						<li>联系人：高经理</li>
+						<li>电 &nbsp; &nbsp;话：0312-5439528</li>
+						<li>手 &nbsp; &nbsp;机：15933788166</li>
+						<li>传 &nbsp; &nbsp;真：0312-5439368</li>
+					</ul>
+				</div>
+				<div class="chenggong clearfix">
+					<h2 class="clearfix">热销产品<span>MORE&gt;</span></h2>
+					<div class="rong clearfix">
+						<a href="#"><img class="le" src="images/c1.png"></a>
+						<div class="php clearfix">
+							<p><img src="images/b1.png"><a href="#">尼龙拉链</a></p>
+							<p><img src="images/b2.png"><a href="#">尼龙拉链</a></p>
+							<p><img src="images/b3.png"><a href="#">尼龙拉链</a></p>
+							<p><img src="images/b4.png"><a href="#">塑料拉头</a></p>
+						</div>
+						<a href="#"><img class="ri" src="images/c2.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="three">
+				<div class="chanpin">
+					<h2>产品展示<span>MORE&gt;</span></h2>
+					<ul>
+						<li><a href="产品展示.html">尼龙拉链</a></li>
+						<li><a href="产品展示.html">金属拉链</a></li>
+						<li><a href="产品展示.html">树脂拉链</a></li>
+						<li><a href="产品展示.html">无码拉链</a></li>
+						<li><a href="产品展示.html">打码拉链</a></li>
+						<li><a href="产品展示.html">工字文拉链</a></li>
+						<li><a href="产品展示.html">人字纹拉链</a></li>
+						<li><a href="产品展示.html">塑料拉链</a></li>
+						<li><a href="产品展示.html">金属拉链</a></li>
+						<li><a href="产品展示.html"></a></li>
+					</ul>
+					<div class="pnp">
+					<img src="images/d1.png"><img src="images/d2.png"><img src="images/d3.png">
+					<img src="images/d4.png"><img src="images/d5.png"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="youqing">
+		<div class="content">
+			<p><span>友情链接：</span><a href="鑫昌发-首页.html">容城县鑫昌发拉链有限公司</a></p>
+		</div>
+	</div>
+	<div id="dht" class="clearfix">
+		<div class="content clearfix">
+			<ul class="clearfix">
+				<li><a href="鑫昌发-首页.html">网站首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="新闻资讯.html">新闻资讯</a></li>
+				<li><a href="产品展示.html">产品展示</a></li>
+				<li><a href="销售网络.html">销售网络</a></li>
+				<li><a href="荣誉资质.html">资质荣誉</a></li>
+				<li><a href="请您留言.html">请您留言</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="content">
+			<p>版权所有：崔晓东 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 技术支持：崔晓东 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ICP备案编号：未进行备案</p>
+		</div>
+	</div>
+</body>
+</html>

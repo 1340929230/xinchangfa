@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>请您留言</title>
+	<style type="text/css">
+		body,p,ul,ol,li,h1,h2,h3,h4,h5,h6{ 
+		margin:0; padding:0;
+		font-weight: normal;
+		}
+		ul{ 
+		list-style: none;
+		}
+		a{ 
+		text-decoration:none;
+		color: #000;
+		}
+		em{ 
+		font-style:normal;
+		}
+		img{ 
+		border:none; vertical-align:middle;
+		}
+		.clearfix:after{ 
+		content: "";
+		display: block;
+		clear: both;
+		}
+		#header{
+			border-top: 3px solid #1B5AA9;
+			height: 113px;
+			width: 100%;
+			background-color: #F0F0F0;
+		}
+		.content{
+			margin: 0 auto;
+			width: 1082px;
+			position: relative;
+		}
+		#header .logo{
+			margin-top: 50px;
+			margin-left: 30px;
+			line-height: 113px;
+		}
+		#header li{
+			text-align: center;
+			height: 23px;
+			width: 70px;
+			float: left;
+		}
+		#header li:after{
+			color: #fff;
+			float: right;
+			content: '|';
+		}
+		#header .a:after{
+			content: '';
+		}
+		#header ul{
+			margin-top: -3px;
+			float: right;
+			background-color: #0396C7;
+			border-radius: 3px;
+			border-top: 3px solid #1B5AA9;
+		}
+		#header ul a{
+			color: #fff;
+			font-size: 11px;
+		}
+		.sousuo{
+			border: 1px solid #ddd;
+			border-bottom: none;
+			font-size: 10px;
+			width:220px;
+			height: 24px;
+			line-height: 24px;
+			position: absolute;
+			right: 95px;
+			top: 60px;
+			background: url('images/soubg.png') repeat-x;
+			color: #6F7D88;
+		}
+		.sousuo span a{
+			color: #000;
+			font-size: 12px;
+			text-align: center;
+			width: 47px;
+			float: right;
+			background: url('images/sousuobg.png') repeat-x;
+		}
+		.sousuo img{
+			margin-left: 5px;
+		}
+		#dht{
+			margin: 0 auto;
+			background-color: #0396C7;
+			height: 42px;
+		}
+		#dht ul{
+			width: 1082px;
+			margin: 0 auto;
+		}
+		#dht li{
+			background-color: #0396C7;
+			float: left;
+			line-height: 41px;
+			text-align: center;
+		}
+		#dht li a{
+			width: 133px;
+			display: block;
+			font-weight: bold;
+			font-size: 12px;
+			color: #fff;
+		}
+		#dht li:hover{
+			line-height: 41px;
+			background: #2626FF;
+			border: 1px solid #fff;
+			box-sizing: border-box;
+			margin-left: -1px;
+		}
+		#dht .act{
+			background: #2626FF;
+			border: 1px solid #fff;
+			box-sizing: border-box;
+		}
+		#banner{
+			height: 532px;
+			background: url('images/banner.png') no-repeat;
+		}
+		#body{
+			margin-top: 25px;
+		}
+		#left{
+			float: left;
+			width: 267px;
+		}
+		#left .top{
+			width: 267px;
+			border:1px solid #ddd ;
+		}
+		#left h2{
+			font-weight: bold;
+			padding-left: 15px;
+			color: #fff;
+			height: 25px;
+			line-height: 25px;
+			font-size: 12px;
+			background: url('images/ulbg.png') no-repeat;
+		}
+		#left .top span a{
+			display: block;
+			line-height: 25px;
+			padding-right: 15px;
+			font-size: 6px;
+			color: #737475;
+			float: right;
+		}
+		#left .top li{
+			height: 45px;
+			background: url('images/lilibg.png') no-repeat left center;
+			border-bottom: 1px solid #ddd;
+		}
+		#left .top a{
+			font-weight: bold;
+			font-size: 12px;
+			margin-left: 40px;
+			line-height: 45px;
+			display: block;
+			height: 45px;
+		}
+		#left .top li:hover{
+			background: #0397C7;
+		}
+		#left .top li:hover a{
+			color: #fff;
+		}
+		#left .top .z{
+			border-bottom: none;
+		}
+		#right{
+			float: right;
+			width: 772px;
+		}
+		#right .new{
+			margin-top: 5px;
+			background: url('images/font.png') no-repeat center;
+			border-bottom: 1px solid #ccc;
+		}
+		#right h3{
+			font-size: 18px;
+			font-weight: bold;
+		}
+		#right h3 span{
+			color: #FE5400;
+		}
+		#right p{
+			display: inline-block;
+			font-size: 12px;
+			color: #666;
+		}
+		#right .l{
+			color: #000;
+			margin-right: 18px;
+			float: right;
+		}
+		#right .font{
+			margin: 0 60px;
+			margin-top: 50px;
+		}
+		#right .font p {
+			text-indent: 2em;
+			display: block;
+			line-height: 1.5;
+			margin-top: 20px;
+			color: #000;
+			font-size: 16px;
+		}
+		#right .font p input{
+			width: 300px;
+			height: 30px;
+		}
+		#right .font p .anniu{
+			height: 60px;
+			background: #00B22D;
+			color: #fff;
+			border: 1px solid #004010;
+			cursor: pointer;
+			border-radius: 10px;
+			display: block;
+			margin: 45px auto;
+		}
+		#right .font p span{
+			display: inline-block;
+			width: 150px;
+			text-align: right;
+		}
+		#right .font p .liuy,textarea{
+			display: inline-block;
+			vertical-align:middle;
+		}
+		#youqing{
+			margin-top: 15px;
+			height: 45px;
+			line-height: 45px;
+			margin-bottom: 20px;
+		}
+		#youqing p{
+			padding-left: 10px;
+			border: 1px solid #ccc;
+			font-size: 12px;
+		}
+		#youqing p span{
+			font-weight: bold;
+		}
+		#footer{
+			height: 90px;
+			line-height: 90px;
+		}
+		#footer p{
+			font-size: 12px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="content clearfix">
+			<img class="logo" src="images/logo.png">
+			<ul>
+				<li><a href="鑫昌发-首页.html">设为首页</a></li>
+				<li><a href="#">加入收藏</a></li>
+				<li class="a"><a href="联系我们.html">联系我们</a></li>
+			</ul>
+			<div class="sousuo clearfix">
+				<img src="images/sousuo.png"> Keywords<span><a href="#">搜 索</a></span>
+			</div>
+		</div>
+	</div>
+	<div id="dht" class="clearfix">
+		<div class="content clearfix">
+			<ul class="clearfix">
+				<li><a href="鑫昌发-首页.html">网站首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="新闻资讯.html">新闻资讯</a></li>
+				<li><a href="产品展示.html">产品展示</a></li>
+				<li><a href="销售网络.html">销售网络</a></li>
+				<li><a href="荣誉资质.html">资质荣誉</a></li>
+				<li class="act"><a href="请您留言.html">请您留言</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner"></div>
+	<div id="body">
+		<div class="content clearfix">
+			<div id="left">
+				<div class="chanpin">
+					<div class="top">
+						<h2 class="clearfix">产品展示<span><a href="产品展示.html">MORE&gt;</a></span></h2>
+						<ul>
+							<li><a href="产品展示.html">尼龙拉链</a></li>
+							<li><a href="产品展示.html">金属拉链</a></li>
+							<li><a href="产品展示.html">树脂拉链</a></li>
+							<li><a href="产品展示.html">无码拉链</a></li>
+							<li><a href="产品展示.html">打码拉链</a></li>
+							<li><a href="产品展示.html">工字文拉链</a></li>
+							<li><a href="产品展示.html">人字纹拉链</a></li>
+							<li><a href="产品展示.html">塑料拉头</a></li>
+							<li><a href="产品展示.html">金属拉头</a></li>
+							<li class="z"><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="right">
+				<div class="new clearfix">
+					<h3><span>请您</span>留言</h3>
+					<p>INFORMATION</p>
+					<p class="l">当前位置：<a href="鑫昌发-首页.html">首页</a>—<a href="请您留言.html">请您留言</a></p>
+				</div>
+				<div class="font">
+					<p><span>标题：</span><input type="text"></p>
+					<p><span>姓名：</span><input type="text"></p>
+					<p><span>手机号码：</span><input type="text"></p>
+					<p><span>Email：</span><input type="text"></p>
+					<p><span class="liuy">留言：</span><textarea name="intro" cols="40" rows="6"></textarea></p>
+					<p><input class="anniu" type="button" value="提 交"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="youqing">
+		<div class="content">
+			<p><span>友情链接：</span><a href="鑫昌发-首页.html">容城县鑫昌发拉链有限公司</a></p>
+		</div>
+	</div>
+	<div id="dht" class="clearfix">
+		<div class="content clearfix">
+			<ul class="clearfix">
+				<li><a href="鑫昌发-首页.html">网站首页</a></li>
+				<li><a href="关于我们.html">关于我们</a></li>
+				<li><a href="新闻资讯.html">新闻资讯</a></li>
+				<li><a href="产品展示.html">产品展示</a></li>
+				<li><a href="销售网络.html">销售网络</a></li>
+				<li><a href="荣誉资质.html">资质荣誉</a></li>
+				<li><a href="请您留言.html">请您留言</a></li>
+				<li><a href="联系我们.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="content">
+			<p>版权所有：崔晓东 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 技术支持：崔晓东 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ICP备案编号：未进行备案</p>
+		</div>
+	</div>
+</body>
+</html>
